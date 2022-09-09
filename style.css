@@ -120,6 +120,11 @@ button:hover {
     width: 375px;
     height: 730px;
   }
+   main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .product-img {
     background: url(images/image-product-mobile.jpg);
