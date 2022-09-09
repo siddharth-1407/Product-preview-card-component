@@ -1,0 +1,133 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+  height: 30em;
+  width: 40em;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-content {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2.5em 2.5em 0em 2.5em;
+}
+
+.product {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+
+.product-title {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+  line-height: 2rem;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  background: url(images/image-product-desktop.jpg);
+  background-size: contain;
+}
+
+.price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  padding: 12% 0;
+}
+
+.price-1 {
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+.price-2 {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.8rem;
+
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+button {
+  width: 100%;
+  line-height: 50px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+button:hover {
+  background-color: hsl(159, 46%, 16%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 9px;
+  text-align: center;
+  padding: 5% 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 730px;
+  }
+
+  .product-img {
+    background: url(images/image-product-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
