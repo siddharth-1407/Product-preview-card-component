@@ -90,10 +90,6 @@ button {
   border-radius: 10px;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
-
-}
-
-section {
   display: flex;
   align-items: center;
   justify-content: center;
